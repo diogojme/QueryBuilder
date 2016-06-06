@@ -1,4 +1,4 @@
-package br.com.augustoccesar.querybuilder.query;
+package br.com.augustoccesar.querybuilder;
 
 import br.com.augustoccesar.querybuilder.exceptions.DatabaseSourceNotDefined;
 
@@ -35,7 +35,8 @@ public class Configuration {
     }
 
     public enum Database {
-        MYSQL("MYSQL");
+        MYSQL("MYSQL"),
+        SQLITE("SQLITE");
 
         private String value;
 
