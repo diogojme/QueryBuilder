@@ -10,7 +10,6 @@ public class Configuration {
     private Database database;
 
     private Configuration() {
-
     }
 
     public static Configuration getInstance() {

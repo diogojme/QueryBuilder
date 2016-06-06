@@ -20,6 +20,23 @@ public class TableCreationBuilder implements QueryBuilder {
     private List<ColumnCreation> columnCreations;
     private Engine engine;
 
+    // Constructors
+
+    public TableCreationBuilder(String tableName, String primaryKey, List<ColumnCreation> columnCreations) {
+        this.tableName = tableName;
+        this.primaryKey = primaryKey;
+        this.columnCreations = columnCreations;
+    }
+
+    public TableCreationBuilder(String tableName, String primaryKey, List<ColumnCreation> columnCreations, Engine engine) {
+        this.tableName = tableName;
+        this.primaryKey = primaryKey;
+        this.columnCreations = columnCreations;
+        this.engine = engine;
+    }
+
+    // Methods
+
     public TableCreationBuilder tableName(String tableName) {
         this.tableName = tableName;
         return this;
